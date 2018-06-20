@@ -9,9 +9,9 @@ class Employee{
 
 const atticus = new Employee( 'Atticus', '2405', '47000', 3 );
 const jem = new Employee( 'Jem', '62347', '63500', 4 );
-const scout =  new Employee( 'Scout', '6243', '74750', 5 );
-const robert =  new Employee( 'Robert', '26835', '66000', 1 );
-const mayella =  new Employee( 'Mayella', '89068', '35000', 2 );
+const scout = new Employee( 'Scout', '6243', '74750', 5 );
+const robert = new Employee( 'Robert', '26835', '66000', 1 );
+const mayella = new Employee( 'Mayella', '89068', '35000', 2 );
 
 const employees = [ atticus, jem, scout, robert, mayella ];
 
@@ -37,9 +37,9 @@ function bonusCalc ( employee ){
     bonusPercentage -= .01;
   }
   if (bonusPercentage > .13){
-    bonusPercentage === .13;
+    bonusPercentage = .13;
   } else if (bonusPercentage < 0){
-    bonusPercentage === 0;
+    bonusPercentage = 0;
   }
   let bonus = salaryNum * bonusPercentage;
   return {
@@ -49,8 +49,6 @@ function bonusCalc ( employee ){
     totalBonus: Math.floor(bonus)
   }
 }
-
-
 
 console.log( employees );
 
